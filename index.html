@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Five Nights at Freddy's</title>
+
+<link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+<h1>Five Nights at Freddy's</h1>
+
+<div class="contenedor">
+
+<!-- FORMULARIO REGISTRO -->
+
+<form id="formRegistro">
+
+<h2>Registro</h2>
+
+<label>Usuario</label>
+<input type="text" id="usuario" placeholder="Ej: guardia_noche" required>
+
+<label>Contraseña</label>
+<input type="password" id="password" placeholder="Ej: Fnaf#1234" required>
+
+<div class="seguridadClave">
+<div class="seguridadBarra">
+<div id="nivelSeguridad"></div>
+</div>
+<p id="textoSeguridad">Seguridad</p>
+</div>
+
+<label>Repetir contraseña</label>
+<input type="password" id="repetir" placeholder="Repite tu contraseña" required>
+
+<label class="mostrarPassword">
+<input type="checkbox" id="verPasswordRegistro">
+Mostrar contraseña
+</label>
+
+<span id="mensajeError"></span>
+
+<button type="submit">Registrarme</button>
+
+<p class="cambiar" onclick="mostrarLogin()">Ya tengo cuenta</p>
+
+</form>
+
+
+<!-- FORMULARIO LOGIN -->
+
+<form id="formLogin" class="oculto">
+
+<h2>Iniciar Sesión</h2>
+
+<label>Usuario</label>
+<input type="text" id="loginUsuario" placeholder="Tu usuario" required>
+
+<label>Contraseña</label>
+<input type="password" id="loginPassword" placeholder="Tu contraseña" required>
+
+<button type="submit">Iniciar sesión</button>
+
+<p class="cambiar" onclick="mostrarRegistro()">Crear cuenta</p>
+
+</form>
+
+</div>
+
+
+<!-- JUMPSCARE -->
+
+<div id="jumpscare">
+
+<img src="img/Horror.gif" alt="Jumpscare">
+
+<audio id="scream" preload="auto">
+<source src="audio/jumpscare-sound-fnaf-4.mp3" type="audio/mpeg">
+Tu navegador no soporta audio HTML5.
+</audio>
+
+</div>
+
+<script src="js/scripst.js"></script>
+
+</body>
+</html>
